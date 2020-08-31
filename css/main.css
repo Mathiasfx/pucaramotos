@@ -1,0 +1,87 @@
+body, html{
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;    
+}
+.w100 {
+    font-weight: 100;
+}
+.w200 {
+    font-weight: 200;
+}
+.w300 {
+    font-weight: 300;
+}
+.w400 {
+    font-weight: 400;
+}
+
+#header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background:rgb(255,255,255);
+    /* background: linear-gradient(to right, #075fd1 -15%, #003aa5 20%); */
+    padding: 0.5em;
+    z-index: 10;
+    margin-bottom: 0px;
+    box-shadow: 0px 2px 10px 1px rgba(117, 86, 86, 0.30);
+    display: block;
+}
+
+#sandwich {
+    position: absolute;
+    right: 5%;
+    font-size: 1.3rem;
+}
+
+#banner{
+    z-index: 90;
+    background-color: #27316e;
+    height: auto;
+    min-height: 390px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 54px;
+}
+
+#banner .form{
+    right: 0;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#banner .product{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 0;
+    padding-left:1em ;
+    padding-top: 1em;
+    min-height: 420px;
+    position: relative;
+    background-image:url("../img/ofertas.png") ;
+}
+
+#registrationForm h3{
+    font-size: 1em;
+    margin-bottom: 1em;
+    color: #ffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+    align-items: center;
+
+}
+
+.logo a{
+    text-decoration: none;
+    color: #27316e;
+    padding:1em;
+}
