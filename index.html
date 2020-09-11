@@ -4,6 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mucho más que una moto">
+    <meta property="og:title" content="Pucara Motos" />
+    <meta property="og:url" content="https://pucaramotos.com.ar/" />
+    <meta property="og:description"
+        content="Concesionario Oficial de Motos: Zanella, Motomel, Keller, Corven, Bajaj. Estamos en toda la Provincia de Formosa. Créditos Personales en el día">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <!--Favicon Data-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Favicon Data-->
     <title>Pucara Motos</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -15,20 +42,64 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <!-- Icons -->
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+
+
+
+
 </head>
 
 
 
-<body>
+<body class="body">
     <header class="container-fluid" id="header">
         <div class="row aling-items-center::before">
 
             <div class="logo col-sm-12">
                 <img src="img/Logo.png" alt="Logo Pucara Motos">
-                <a href="#menu" id="sandwich"><i class="fas fa-bars"></i></a>
+
+                <!-- <a href="#menu" id="sandwich"><i class="fas fa-bars"></i></a>  -->
+                <nav class="menu">
+                    <label for="btn-menu" class="icon-menu">☰</label>
+                </nav>
+
+
             </div>
         </div>
     </header>`
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+
+            <nav>
+                <p class="pmenu">Filtrar por:</p>
+                <a href="#" id="btnlinea">Linea
+                    <span class="fas fa-caret-down"></span>
+                </a>
+                <ul class="MostrarLineas">
+                    <li><i class="fas fa-motorcycle"></i> 110</li>
+                    <li><i class="fas fa-motorcycle"></i> 135</li>
+                    <li><i class="fas fa-motorcycle"></i> 150</li>
+                    <li><i class="fas fa-motorcycle"></i> 200</li>
+                </ul>
+                <a href="#" id="btnMarca">Marcas
+                    <span class="fas fa-caret-down"></span>
+                </a>
+                <ul class="MostrarMarcas">
+                    <li><img src="img/marcas/bajajmenu.png" alt="" height="40px"></li>
+                    <li><img src="img/marcas/zanellamenu.png" alt="" height="40px"></li>
+                    <li><img src="img/marcas/corvenmenu.png" alt="" height="40px"></li>
+                    <li><img src="img/marcas/kellermenu.png" alt="" height="40px"></li>
+                    <li><img src="img/marcas/mondialmenu.png" alt="" height="40px"></li>
+                    <li><img src="img/marcas/motomelmenu.png" alt="" height="40px"></li>
+                </ul>
+
+            </nav>
+            <label for="btn-menu" class="icon-equis">X</label>
+        </div>
+    </div>
+
     <section class="container-fluid" id="banner">
         <div class="row row-eq-height">
             <!-- IMAGENPROMO -->
@@ -46,36 +117,58 @@
                         <div class="formgroup">
                             <label for="Nombre" class="sr-only">Nombre y Apellido</label>
                             <div class="col-sm-11">
-                                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre y Apellido" maxlength="50">
+                                <input type="text" class="form-control" name="nombre" id="nombre"
+                                    placeholder="Nombre y Apellido" maxlength="50">
                                 <p id="form_error_nombre" class="error"></p>
                             </div>
                         </div>
                         <div class="formgroup">
                             <label for="dni" class="sr-only">DNI</label>
                             <div class="col-sm-11">
-                                <input type="number" class="form-control" name="dni" id="dni" placeholder="Ingrese su DNI" maxlength="8">
+                                <input type="number" class="form-control" name="dni" id="dni"
+                                    placeholder="Ingrese su DNI" maxlength="8">
                                 <p id="form_error_dni" class="error"></p>
                             </div>
                         </div>
                         <div class="formgroup">
-                            <label for="email" class="sr-only">email</label>
+                            <label for="localidad" class="sr-only">Localidad</label>
                             <div class="col-sm-11">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su email">
-                                <p id="form_error_email" class="error"></p>
+                                <select class="form-control" name="localidad" id="localidad">
+                                    <option value="">Formosa Capital</option>
+                                    <option value="">Ibarreta</option>
+                                    <option value="">Pirane</option>
+                                    <option value="">Laguna Blanca</option>
+                                    <option value="">Clorinda</option>
+                                    <option value="">Las lomitas</option>
+                                    <option value="">Ingeniero Juearez</option>
+                                </select>
+                                <p id="form_error_localidad" class="error"></p>
                             </div>
                         </div>
-                        <div class="formgroup">                            
-                                <label for="telefono" class="sr-only">Teléfono *</label>
-                                <div class="col-sm-11">
-                                    <input type="text" class="form-control" name="telefono" id="telefono"
-                                        placeholder="Sin 0 ni 15 Ej: 0370455522">
-                                    <p id="form_error_telefono" class="error"></p>
-                                </div>                            
+                        <div class="formgroup">
+                            <label for="telefono" class="sr-only">Teléfono *</label>
+                            <div class="col-sm-11">
+                                <input type="text" class="form-control" name="telefono" id="telefono"
+                                    placeholder="Sin 0 ni 15 Ej: 0370455522">
+                                <p id="form_error_telefono" class="error"></p>
+                            </div>
                         </div>
-                        
+                        <div class="formgroup">
+                            <label for="metodopago" class="sr-only">Elegí tu medio de pago *</label>
+                            <div class="col-sm-11">
+                                <select class="form-control" name="mediopago" id="mediopago">
+                                    <option value="contado">Contado</option>
+                                    <option value="tarjetacredito">Tarjeta de Crédito</option>
+                                    <option value="creditodni">Credito solo DNI</option>
+                                </select>
+                                <p id="form_error_mediopago" class="error"></p>
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <div class="col-sm-11">
-                                <button type="submit" name="enviar" class="btn btn-primary btn-block">Quiero asesoramiento</button>
+                                <button type="submit" name="enviar" class="btn btn-primary btn-block">Quiero
+                                    asesoramiento</button>
                             </div>
                             <p id="form_error" class="error"></p>
                         </div>
@@ -92,6 +185,434 @@
         </div>
     </section>
 
+    <main id="productos" class="container-fluid">
+        <!-- MOTOS -->
+        <div class="row">
+            <div class="item col-xs12 col-sm-12 col-md-6 equal">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Rouser NS 200</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/ROUSER200.png" alt="" width="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/bajaj.png" alt="" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+            <div class="item col-xs12 col-sm-12 col-md-6">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Zanella RX 150 Z7</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Zanella-RX-150-Z7.png" alt="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/zanella.png" alt="" width="95%" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIN FILA MOTOS -->
+        <!-- MOTOS -->
+        <div class="row">
+            <div class="item col-xs12 col-sm-12 col-md-6 equal">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Motomel SKUA 150 New Cross</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Motomel-SKUA-150.png" alt="" width="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/motomel.png" alt="" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+            <div class="item col-xs12 col-sm-12 col-md-6">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Motomel CG S2 Tubular</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Motomel-CG-S2-150.png" alt="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/motomel.png" alt="" width="95%" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIN FILA MOTOS -->
+        <!-- MOTOS -->
+        <div class="row">
+            <div class="item col-xs12 col-sm-12 col-md-6 equal">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Keller Stratus Base 150</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Keller-Stratus-Base-150.png" alt="" width="" id="motofoto"
+                        class="img-responsive">
+                    <img src="img/marcas/keller.png" alt="" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+            <div class="item col-xs12 col-sm-12 col-md-6">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Keller Miracle Cross 150</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Keller-Miracle-150.png" alt="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/keller.png" alt="" width="95%" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIN FILA MOTOS -->
+
+        <!-- MOTOS -->
+        <div class="row">
+            <div class="item col-xs12 col-sm-12 col-md-6 equal">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Corven Hunter R/T 150</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Corven-Hunter-RT-150.png" alt="" width="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/corven.png" alt="" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+            <div class="item col-xs12 col-sm-12 col-md-6">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Corven Boxer R/T 150</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Corven-Boxer-RT-150.png" alt="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/corven.png" alt="" width="95%" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIN FILA MOTOS -->
+
+        <!-- MOTOS -->
+        <div class="row">
+            <div class="item col-xs12 col-sm-12 col-md-6 equal">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Bajaj Rouser 135</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Bajaj-Rouser-135.png" alt="" width="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/bajaj.png" alt="" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+            <div class="item col-xs12 col-sm-12 col-md-6">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Motomel SKUA 125</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Motomel-Skua-125.png" alt="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/corven.png" alt="" width="95%" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIN FILA MOTOS -->
+
+        <!-- MOTOS -->
+        <div class="row">
+            <div class="item col-xs12 col-sm-12 col-md-6 equal">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Motomel Blitz Full 110</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Motomel-Blitz-Full-110.png" alt="" width="" id="motofoto"
+                        class="img-responsive">
+                    <img src="img/marcas/motomel.png" alt="" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+            <div class="item col-xs12 col-sm-12 col-md-6">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Motomel Blitz Base 110</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Motomel-Blitz-Base-110.png" alt="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/motomel.png" alt="" width="95%" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIN FILA MOTOS -->
+
+        <!-- MOTOS -->
+        <div class="row">
+            <div class="item col-xs12 col-sm-12 col-md-6 equal">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Mondial LD 110 Max</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Mondial-LD-110-MAX.png" alt="" width="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/mondial.png" alt="" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+            <div class="item col-xs12 col-sm-12 col-md-6">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Keller Crono Full 110</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Keller-Crono-Full-110.png" alt="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/keller.png" alt="" width="95%" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIN FILA MOTOS -->
+
+        <!-- MOTOS -->
+        <div class="row">
+            <div class="item col-xs12 col-sm-12 col-md-6 equal">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Keller Crono Classic 110</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Keller-Crono-Full-110.png" alt="" width="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/keller.png" alt="" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+            <div class="item col-xs12 col-sm-12 col-md-6">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Corven Energy RT R2</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Corven-Energy-RT.png" alt="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/corven.png" alt="" width="95%" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIN FILA MOTOS -->
+
+        <!-- MOTOS -->
+        <div class="row">
+            <div class="item col-xs12 col-sm-12 col-md-6 equal">
+                <div class="header clearfix">
+                    <h2 class="float-left motonombre">Corven Energy A/D R2</h2>
+                </div>
+                <div class="descripcion">
+                    <marquee><b>LLEVALA HOY MISMO + CASCO DE REGALO</b></marquee>
+                </div>
+                <div class="imagemoto clearfix">
+                    <img src="img/Logo.png" alt="" class="logolocal">
+                    <img src="img/motos/Energy-110-R2.png" alt="" width="" id="motofoto" class="img-responsive">
+                    <img src="img/marcas/corven.png" alt="" class="logomarca">
+                </div>
+                <div class="cotizar">
+                    <button type="button" id="btnCotizar" class="btn btn-danger btn-block"
+                        data-target="#modalForm">Quiero Asesoramiento</button>
+                </div>
+            </div>
+            <div class="item col-xs12 col-sm-12 col-md-6">
+
+            </div>
+
+        </div>
+
+
+
+    </main>
+    <div id="WAButton">
+
+    </div>
+
+    <div class="container">
+        <div class="row blog">
+            <div class="col-sm-12">
+                <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <!-- <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#blogCarousel" data-slide-to="1"></li> -->
+                    </ol>
+
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="img/carrousel1.png" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="img/carrousel2.png" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="img/carrousel3.png" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="img/carrousel4.png" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="img/carrousel5.png" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="img/carrousel1.png" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="img/carrousel2.png" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="img/carrousel3.png" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+
+                    </div>
+                    <!--.carousel-inner-->
+                </div>
+                <!--.Carousel-->
+
+            </div>
+        </div>
+    </div>
 
 
 
@@ -101,6 +622,100 @@
 
 
 
+
+
+    <div class="container-fluid" id="beneficios">
+        <img src="img/marcas/beneficios.png" alt="beneficios" class="img-fluid">
+    </div>
+
+    <div class="container-fluid" id="iconos">
+        <img src="img/marcas/marcasmotos.png" alt="Marcas" class="img-responsive iconos">
+
+    </div>
+
+    <section class="cointainer-fluid" id="footer">
+        <div class="row">
+
+            <div class="col-md-4 form-horizontal" id="formfooter">
+                <!-- FORMULARIO CABECERA -->
+                <form action="" method="POST" id="reg">
+                    <div class="formgroup">
+                        <label for="Nombre" class="sr-only">Nombre y Apellido</label>
+                        <div class="col-sm-11">
+                            <input type="text" class="form-control" name="nombre" id="nombre"
+                                placeholder="Nombre y Apellido" maxlength="50">
+                            <p id="form_error_nombre" class="error"></p>
+                        </div>
+                    </div>
+                    <div class="formgroup">
+                        <label for="dni" class="sr-only">DNI</label>
+                        <div class="col-sm-11">
+                            <input type="number" class="form-control" name="dni" id="dni" placeholder="Ingrese su DNI"
+                                maxlength="8">
+                            <p id="form_error_dni" class="error"></p>
+                        </div>
+                    </div>
+                    <div class="formgroup">
+                        <label for="localidad" class="sr-only">Localidad</label>
+                        <div class="col-sm-11">
+                            <select class="form-control" name="localidad" id="localidad">
+                                <option value="">Formosa Capital</option>
+                                <option value="">Ibarreta</option>
+                                <option value="">Pirane</option>
+                                <option value="">Laguna Blanca</option>
+                                <option value="">Clorinda</option>
+                                <option value="">Las lomitas</option>
+                                <option value="">Ingeniero Juearez</option>
+                            </select>
+                            <p id="form_error_localidad" class="error"></p>
+                        </div>
+                    </div>
+                    <div class="formgroup">
+                        <label for="telefono" class="sr-only">Teléfono *</label>
+                        <div class="col-sm-11">
+                            <input type="text" class="form-control" name="telefono" id="telefono"
+                                placeholder="Sin 0 ni 15 Ej: 0370455522">
+                            <p id="form_error_telefono" class="error"></p>
+                        </div>
+                    </div>
+                    <div class="formgroup">
+                        <label for="metodopago" class="sr-only">Elegí tu medio de pago *</label>
+                        <div class="col-sm-11">
+                            <select class="form-control" name="mediopago" id="mediopago">
+                                <option value="contado">Contado</option>
+                                <option value="tarjetacredito">Tarjeta de Crédito</option>
+                                <option value="creditodni">Credito solo DNI</option>
+                            </select>
+                            <p id="form_error_mediopago" class="error"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-11">
+                            <button type="submit" name="enviar" class="btn btn-primary btn-block">Quiero
+                                asesoramiento</button>
+                        </div>
+                        <p id="form_error" class="error"></p>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8 col-sm-12" id="social">
+                <div class="row">
+                    <div class="facebook">
+                        <i class="fab fa-instagram fa-3x"></i>
+                    </div>
+                    <div class="instagram">
+                        <i class="fab fa-facebook-square fa-3x"></i>
+                    </div>
+                    <div class="logofooter">
+                        <img src="img/logoblanco.png" height="80px" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
 
 
 
@@ -121,6 +736,39 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="js/pucaradb.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/floating-wpp.min.css">
+    <!--Floating WhatsApp javascript-->
+    <script type="text/javascript" src="js/floating-wpp.min.js"></script>
+
+
+
 </body>
+<script type="text/javascript">
+    $(function () {
+        $('#WAButton').floatingWhatsApp({
+            phone: '+543704355467', //WhatsApp Business phone number
+            headerTitle: 'Te asesoramos por WhatsApp!', //Popup Title
+            popupMessage: 'Hola! como podemos ayudarte', //Popup Message
+            showPopup: true, //Enables popup display
+            buttonImage: '<img src="img/whatsapp.svg"/>', //Button Image
+            //headerColor: 'crimson', //Custom header color
+            //backgroundColor: 'crimson', //Custom background button color
+            position: "right" //Position: left | right
+
+        });
+    });
+</script>
+
+<script>
+    // optional
+    $('#blogCarousel').carousel({
+        interval: 5000
+    });
+
+
+
+</script>
 
 </html>
