@@ -81,8 +81,8 @@ body{
     padding-left: 1.5em;
 }
 .cont-menu{
-    width: 350px;
-    max-width: 400px;
+    width: 299px;
+    max-width: 320px;
     background:#27316e;
     height: 100%;
     position: relative;
@@ -225,8 +225,8 @@ nav ul li{
 }
 
 #productos .motonombre{
-    width: 60%;
-    font-size:1.2em;
+    width: 70%;
+    font-size:1em;
     margin: 0;
     padding: 0;
     font-weight: 600;
@@ -260,22 +260,38 @@ nav ul li{
  .logolocal{
      position: absolute;
      width: 20%;
+     top: 100px;
  }
 
  .logomarca{
+     display: block;
     position: absolute;
     margin-top:5px ;
-    top: 20%;
+    top: 100px;
     width: 17%;
     right: 5%;
 }
 
+.vermas{
+    width: 30%;
+    float: left;
+    text-align: center;
+    color: #ffff;
+    background-color:#27316e ;
+    
+
+}
+
 .cotizar{
-    width: 72%;
+    width: 70%;
     float: right;
     text-align: center;
     margin-bottom:0.5em ;
 
+}
+
+.modalmoto{
+    padding-top: 10em;
 }
 
  #motofoto{
@@ -292,6 +308,7 @@ nav ul li{
      background-color: #141935;
      text-align: center;
      padding: 0.5em;     
+     
  }
  #iconos .iconos{
     margin: 0 auto;
@@ -307,6 +324,7 @@ nav ul li{
 
  #beneficios .iconos{
     margin: 0 auto;
+    background-color: #f3f3f2;   
     
 
  }
@@ -315,21 +333,17 @@ nav ul li{
      height: auto;
      min-height: 245px;
      background-image: linear-gradient(to right top,#32409e 20%,#27316e);
-     padding-top:3em;
+     padding-top:5em;
  }
 
  #WAButton{
      z-index: 500;
  }
- .fa-instagram, .fa-facebook-square {
-    color: #ffff;
-    padding-top:0.5em;
-    cursor: pointer;
-   
-}
+
 
 .facebook,.instagram,.logofooter{
     padding: 5px;
+    cursor: pointer;
 }
 
 #social{
@@ -341,9 +355,7 @@ nav ul li{
     
 }
 
-#formfooter{
-    padding-left:20px ;
-}
+
 
 .blog .carousel-indicators {
 	left: 0;
@@ -352,14 +364,5 @@ nav ul li{
 
 }
 
-/* The colour of the indicators */
-.blog .carousel-indicators li {
-    background: #a3a3a3;
-    border-radius: 50%;
-    width: 3px;
-    height: 3px;
-}
 
-.blog .carousel-indicators .active {
-background: #707070;
-}
+
