@@ -12,6 +12,7 @@ const btnenviarmodal = document.querySelector('#enviarmodal');
 const btnenviarfooter = document.querySelector('#enviarfooter');
 const selectormoto = document.querySelector('#productos');
 const resultado = document.querySelector('#productos');
+const loader = document.querySelector('#loader');
 
 //BOTONES DE FILTRO
 const btnfiltrar110 = document.querySelector('#linea110');
@@ -77,7 +78,7 @@ selectormoto.addEventListener('click', motoseleccionada);
 
 //eventMenu
 btnfiltrar110.addEventListener('click', (e) => {
-    e.preventDefault();
+    e.preventDefault();    
     datosFiltro.linea = "110";
     filtrarMotos();
     menu.checked = false;
@@ -360,11 +361,25 @@ function EnviarWasapModal(e) {
     location.href = url;
 }
 
+
+
 function filtrarMotos() {
+
+    location.hash = '#productos';
+    loader.style.display = 'flex';
+
+    
+    
+  
 
     const resultado = motos.filter(filtrarMarca).filter(filtrarLinea);
 
-    //console.log(resultado);
+   
+   
+
+    setTimeout(() => {
+        loader.style.display = 'none';        
+    },2000 );
 
 
     if (resultado.length) {
@@ -374,6 +389,8 @@ function filtrarMotos() {
     }
 
 }
+
+
 
 function noResultado() {
     limpiarHTML();

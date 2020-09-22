@@ -364,5 +364,12 @@ nav ul li{
 
 }
 
-
-
+#loader{
+    text-align: center;
+    display: none;
+	
+	width: 100%;
+	height: 100vh;
+	background: #27316e url(/img/loader.gif) center no-repeat;
+	z-index:999;
+}
