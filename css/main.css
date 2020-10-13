@@ -198,13 +198,16 @@ nav ul li{
     background-image:url("../img/ofertas.jpg") ;
 }
 
-#registrationForm h3{
-    font-size: 1em;
+
+#consultatitle{
+    font-size: 1.4em;
     margin-bottom: 1em;
-    color: #ffff;
+    color: #d5191d;
     text-align: left;
     font-weight: bold;
 }
+
+
 
 .logo{
     display: flex;
@@ -237,6 +240,9 @@ nav ul li{
 #productos .item{
    margin-bottom: 30px;
    height: auto;
+   margin-left: 0;
+   margin-right: 0;
+   width: 100%;
 }
 
 #productos .header{
@@ -278,6 +284,7 @@ nav ul li{
     text-align: center;
     color: #ffff;
     background-color:#27316e ;
+    display: block;
     
 
 }
@@ -366,10 +373,65 @@ nav ul li{
 
 #loader{
     text-align: center;
-    display: none;
-	
-	width: 100%;
-	height: 100vh;
-	background: #27316e url(/img/loader.gif) center no-repeat;
+    display: none;	
+    width: 100%;
+    height: 100vh;
+    background: #27316e;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 10em;
 	z-index:999;
+}
+
+.load{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+
+
+#direcciones {
+        
+    color: #f8f9fa;
+    
+}
+
+#direcciones ul li {
+    padding: 5px;
+    list-style: none;
+    
+}
+
+
+@media (max-width: 760px) {
+    #consultatitle{
+        font-size: 1.9em;
+        margin-bottom: 1em;
+        color: #d5191d;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #banner .product{
+       
+        background-image:url("../img/ofertasmovil.jpg") ;
+    }
+
+    #direcciones{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        
+    }
+
+    #direcciones ul {
+        text-decoration: none;
+        
+    }
+
 }

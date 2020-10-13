@@ -234,7 +234,7 @@ function mostarMotos(motos) {
 
     motos.forEach(moto => {
 
-        const { id, modelo, descripcion, imagen, marcaimagen } = moto;
+        const { id, modelo, descripcion, imagen,foto1,foto2,foto3,foto4,foto5,marcaimagen } = moto;
         var div = document.createElement('div');
         div.setAttribute('class', 'item col-xs12 col-sm-12 col-md-6 equal');
         div.innerHTML = `   
@@ -251,7 +251,7 @@ function mostarMotos(motos) {
                 </div>
                 
                 <div class="">
-                    <button type="button" id="vermasfotos" class="vermas btn btn-block btn-light" data-toggle="modal" data-target="#${id}">Más Fotos</button>
+                    <button type="button" id="vermasfotos" class="vermas btn btn-light" data-toggle="modal" data-target="#${id}">Más Fotos</button>
                 </div>            
                 <div class="cotizar">                
                     <button type="button" id="btnCotizar" class="cotizar btn btn-danger btn-block " data-toggle="modal"
@@ -267,29 +267,29 @@ function mostarMotos(motos) {
         <div class="modal-dialog">
           <div class="modal-content">
 
-          <div id="carouselExampleControls" class="carousel slide d-block d-sm-block " data-ride="carousel">
+          <div id="carouselExampleControls${id}" class="carousel slide d-block d-sm-block " data-ride="carousel">
           <div class="carousel-inner">
               <div class="carousel-item active">
-                  <img class="d-block w-100" src="${imagen}" alt="First slide">
+                  <img class="d-block w-100" src="${foto1}" alt="First slide">
               </div>
               <div class="carousel-item">
-                  <img class="d-block w-100" src="${imagen}" alt="Second slide">
+                  <img class="d-block w-100" src="${foto2}" alt="Second slide">
               </div>
               <div class="carousel-item">
-                  <img class="d-block w-100" src="${imagen}" alt="Third slide">
+                  <img class="d-block w-100" src="${foto3}" alt="Third slide">
               </div>
               <div class="carousel-item">
-                  <img class="d-block w-100" src="${imagen}" alt="Third slide">
+                  <img class="d-block w-100" src="${foto4}" alt="Third slide">
               </div>
               <div class="carousel-item">
-                  <img class="d-block w-100" src="${imagen}" alt="Third slide">
+                  <img class="d-block w-100" src="${foto5}" alt="Third slide">
               </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <a class="carousel-control-prev" href="#carouselExampleControls${id}" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <a class="carousel-control-next" href="#carouselExampleControls${id}" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
           </a>

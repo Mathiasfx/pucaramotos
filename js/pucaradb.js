@@ -10,7 +10,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Energy-110-R2.png',
+        imagen:'img/motos/Energy-110-R2/Energy-110-R2-old.png',
+        foto1:'img/motos/Energy-110-R2/foto1.jpg',
+        foto2:'img/motos/Energy-110-R2/foto2.jpg',
+        foto3:'img/motos/Energy-110-R2/foto3.jpg',
+        foto4:'img/motos/Energy-110-R2/foto4.jpg',
+        foto5:'img/motos/Energy-110-R2/foto5.jpg',
         marcaimagen:'img/marcas/corven.png'
     },
     {
@@ -23,7 +28,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Corven-Energy-RT.png',
+        imagen:'img/motos/Corven-Energy-RT/Corven-Energy-RT.png',
+        foto1:'img/motos/Corven-Energy-RT/foto1.jpg',
+        foto2:'img/motos/Corven-Energy-RT/foto2.jpg',
+        foto3:'img/motos/Corven-Energy-RT/foto3.jpg',
+        foto4:'img/motos/Corven-Energy-RT/foto4.jpg',
+        foto5:'img/motos/Corven-Energy-RT/foto5.jpg',
         marcaimagen:'img/marcas/corven.png'
     },
     {
@@ -36,7 +46,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Keller-Crono-Full-110.png',
+        imagen:'img/motos/Keller-Crono-Classic-110/Keller-Crono-Classic-110.png',
+        foto1:'img/motos/Keller-Crono-Classic-110/foto1.jpg',
+        foto2:'img/motos/Keller-Crono-Classic-110/foto2.jpg',
+        foto3:'img/motos/Keller-Crono-Classic-110/foto3.jpg',
+        foto4:'img/motos/Keller-Crono-Classic-110/foto4.jpg',
+        foto5:'img/motos/Keller-Crono-Classic-110/foto5.jpg',       
         marcaimagen:'img/marcas/keller.png'
     },
     {
@@ -49,7 +64,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Keller-Crono-Full-110.png',
+        imagen:'img/motos/Keller-Crono-Full-110/Keller-Crono-Full-110.png',
+        foto1:'img/motos/Keller-Crono-Full-110/foto1.jpg',
+        foto2:'img/motos/Keller-Crono-Full-110/foto2.jpg',
+        foto3:'img/motos/Keller-Crono-Full-110/foto3.jpg',
+        foto4:'img/motos/Keller-Crono-Full-110/foto4.jpg',
+        foto5:'img/motos/Keller-Crono-Full-110/foto5.jpg',          
         marcaimagen:'img/marcas/keller.png'
     },
     {
@@ -62,7 +82,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Mondial-LD-110-MAX.png',
+        imagen:'img/motos/Mondial-LD-110-MAX/Mondial-LD-110-MAX.png',
+        foto1:'img/motos/Mondial-LD-110-MAX/foto1.jpg',
+        foto2:'img/motos/Mondial-LD-110-MAX/foto2.jpg',
+        foto3:'img/motos/Mondial-LD-110-MAX/foto3.jpg',
+        foto4:'img/motos/Mondial-LD-110-MAX/foto4.jpg',
+        foto5:'img/motos/Mondial-LD-110-MAX/foto5.jpg',              
         marcaimagen:'img/marcas/mondial.png'
     },
     {
@@ -75,7 +100,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Motomel-Blitz-Base-110.png',
+        imagen:'img/motos/Motomel-Blitz-Base-110/Motomel-Blitz-Base-110.png',
+        foto1:'img/motos/Motomel-Blitz-Base-110/foto1.jpg',
+        foto2:'img/motos/Motomel-Blitz-Base-110/foto2.jpg',
+        foto3:'img/motos/Motomel-Blitz-Base-110/foto3.jpg',
+        foto4:'img/motos/Motomel-Blitz-Base-110/foto4.jpg',
+        foto5:'img/motos/Motomel-Blitz-Base-110/foto5.jpg',     
         marcaimagen:'img/marcas/motomel.png'
     },
     {
@@ -88,7 +118,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Motomel-Blitz-Full-110.png',
+        imagen:'img/motos/Motomel-Blitz-Full-110/Motomel-Blitz-Full-110.png',
+        foto1:'img/motos/Motomel-Blitz-Full-110/foto1.jpg',
+        foto2:'img/motos/Motomel-Blitz-Full-110/foto2.jpg',
+        foto3:'img/motos/Motomel-Blitz-Full-110/foto3.jpg',
+        foto4:'img/motos/Motomel-Blitz-Full-110/foto4.jpg',
+        foto5:'img/motos/Motomel-Blitz-Full-110/foto5.jpg',  
         marcaimagen:'img/marcas/motomel.png'
     },
     {
@@ -101,7 +136,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Motomel-Skua-125.png',
+        imagen:'img/motos/Motomel-Skua-125/Motomel-Skua-125.png',
+        foto1:'img/motos/Motomel-Skua-125/foto1.jpg',
+        foto2:'img/motos/Motomel-Skua-125/foto2.jpg',
+        foto3:'img/motos/Motomel-Skua-125/foto3.jpg',
+        foto4:'img/motos/Motomel-Skua-125/foto4.jpg',
+        foto5:'img/motos/Motomel-Skua-125/foto5.jpg',  
         marcaimagen:'img/marcas/motomel.png'
     },
     {
@@ -114,7 +154,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Bajaj-Rouser-135.png',
+        imagen:'img/motos/Bajaj-Rouser-135/Bajaj-Rouser-135.png',
+        foto1:'img/motos/Bajaj-Rouser-135/foto1.jpg',
+        foto2:'img/motos/Bajaj-Rouser-135/foto2.jpg',
+        foto3:'img/motos/Bajaj-Rouser-135/foto3.jpg',
+        foto4:'img/motos/Bajaj-Rouser-135/foto4.jpg',
+        foto5:'img/motos/Bajaj-Rouser-135/foto5.jpg',  
         marcaimagen:'img/marcas/bajaj.png'
     },
     {
@@ -127,7 +172,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Corven-Boxer-RT-150.png',
+        imagen:'img/motos/Corven-Boxer-RT-150/Corven-Boxer-RT-150.png',
+        foto1:'img/motos/Corven-Boxer-RT-150/foto1.jpg',
+        foto2:'img/motos/Corven-Boxer-RT-150/foto2.jpg',
+        foto3:'img/motos/Corven-Boxer-RT-150/foto3.jpg',
+        foto4:'img/motos/Corven-Boxer-RT-150/foto4.jpg',
+        foto5:'img/motos/Corven-Boxer-RT-150/foto5.jpg', 
         marcaimagen:'img/marcas/corven.png'
     },
     {
@@ -140,7 +190,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Corven-Hunter-RT-150.png',
+        imagen:'img/motos/Corven-Hunter-RT/Corven-Hunter-RT-150.png',
+        foto1:'img/motos/Corven-Hunter-RT/foto1.jpg',
+        foto2:'img/motos/Corven-Hunter-RT/foto2.jpg',
+        foto3:'img/motos/Corven-Hunter-RT/foto3.jpg',
+        foto4:'img/motos/Corven-Hunter-RT/foto4.jpg',
+        foto5:'img/motos/Corven-Hunter-RT/foto5.jpg', 
         marcaimagen:'img/marcas/corven.png'
     },
     {
@@ -153,7 +208,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Keller-Miracle-150.png',
+        imagen:'img/motos/Keller-Miracle-150/Keller-Miracle-150.png',
+        foto1:'img/motos/Keller-Miracle-150/foto1.jpg',
+        foto2:'img/motos/Keller-Miracle-150/foto2.jpg',
+        foto3:'img/motos/Keller-Miracle-150/foto3.jpg',
+        foto4:'img/motos/Keller-Miracle-150/foto4.jpg',
+        foto5:'img/motos/Keller-Miracle-150/foto5.jpg', 
         marcaimagen:'img/marcas/keller.png'
     },      
     {
@@ -166,7 +226,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Keller-Stratus-Base-150.png',
+        imagen:'img/motos/Keller-Stratus-Base-150/Keller-Stratus-Base-150.png',
+        foto1:'img/motos/Keller-Stratus-Base-150/foto1.jpg',
+        foto2:'img/motos/Keller-Stratus-Base-150/foto2.jpg',
+        foto3:'img/motos/Keller-Stratus-Base-150/foto3.jpg',
+        foto4:'img/motos/Keller-Stratus-Base-150/foto4.jpg',
+        foto5:'img/motos/Keller-Stratus-Base-150/foto5.jpg', 
         marcaimagen:'img/marcas/keller.png'
     },
     {
@@ -179,7 +244,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Motomel-CG-S2-150.png',
+        imagen:'img/motos/Motomel-CG-S2-150/Motomel-CG-S2-150.png',
+        foto1:'img/motos/Motomel-CG-S2-150/foto1.jpg',
+        foto2:'img/motos/Motomel-CG-S2-150/foto2.jpg',
+        foto3:'img/motos/Motomel-CG-S2-150/foto3.jpg',
+        foto4:'img/motos/Motomel-CG-S2-150/foto4.jpg',
+        foto5:'img/motos/Motomel-CG-S2-150/foto5.jpg', 
         marcaimagen:'img/marcas/motomel.png'
     },
     {
@@ -192,22 +262,27 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Motomel-SKUA-150.png',
+        imagen:'img/motos/Motomel-Skua-150/Motomel-SKUA-150.png',
+        foto1:'img/motos/Motomel-Skua-150/foto1.jpg',
+        foto2:'img/motos/Motomel-Skua-150/foto2.jpg',
+        foto3:'img/motos/Motomel-Skua-150/foto3.jpg',
+        foto4:'img/motos/Motomel-Skua-150/foto4.jpg',
+        foto5:'img/motos/Motomel-Skua-150/foto5.jpg', 
         marcaimagen:'img/marcas/motomel.png'
     },
-    {
-        id:'moto002',
-        linea:'150',
-        modelo:'RX 150 Z7',
-        marca:'Zanella',
-        descripcion:'LLEVALA HOY MISMO + CASCO DE REGALO ',
-        metodopago:'',
-        categoria:'moto',
-        disponible:'si',
-        year:'2019',
-        imagen:'img/motos/Zanella-RX-150-Z7.png',
-        marcaimagen:'img/marcas/zanella.png'
-    },
+    // {
+    //     id:'moto002',
+    //     linea:'150',
+    //     modelo:'RX 150 Z7',
+    //     marca:'Zanella',
+    //     descripcion:'LLEVALA HOY MISMO + CASCO DE REGALO ',
+    //     metodopago:'',
+    //     categoria:'moto',
+    //     disponible:'si',
+    //     year:'2019',
+    //     imagen:'img/motos/Zanella-RX-150-Z7.jpg',
+    //     marcaimagen:'img/marcas/zanella.jpg'
+    // },
     
     {
         id:'moto001',
@@ -219,7 +294,12 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/ROUSER200.png',
+        imagen:'img/motos/Rouser200/ROUSER200.png',
+        foto1:'img/motos/Rouser200/foto1.jpg',
+        foto2:'img/motos/Rouser200/foto2.jpg',
+        foto3:'img/motos/Rouser200/foto3.jpg',
+        foto4:'img/motos/Rouser200/foto4.jpg',
+        foto5:'img/motos/Rouser200/foto5.jpg', 
         marcaimagen:'img/marcas/bajaj.png'
     }
    
