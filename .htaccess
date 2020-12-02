@@ -19,3 +19,7 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:pucaramotos.com.ar
 
 ExpiresActive On ExpiresByType image/jpg "access 1 year" ExpiresByType image/jpeg "access 1 year" ExpiresByType image/gif "access 1 year" ExpiresByType image/png "access 1 year" ExpiresByType text/css "access 1 month" ExpiresByType application/pdf "access 1 month" ExpiresByType text/x-javascript "access 1 month" ExpiresByType application/x-shockwave-flash "access 1 month" ExpiresByType image/x-icon "access 1 year" ExpiresDefault "access 2 days"
+<FilesMatch "\.(css|js|ico|pdf|flv|jpg|jpeg|png|gif|swf|mp3|mp4)$">
+Header set Cache-Control "public"
+Header set Expires "Thu, 25 Apr 2025 20:00:00 GMT"  
+</FilesMatch>

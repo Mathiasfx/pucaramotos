@@ -138,7 +138,7 @@ const motos = [
         categoria:'moto',
         disponible:'si',
         year:'2019',
-        imagen:'img/motos/Mondial-LD-110-MAX-FULL/Mondial-LD-110-MAX-FULL.png',
+        imagen:'img/motos/Mondial-LD-110-MAX-FULL/Mondial-LD-110-MAX-FULL.jpg',
         foto1:'img/motos/Mondial-LD-110-MAX-FULL/foto1.jpg',
         foto2:'img/motos/Mondial-LD-110-MAX-FULL/foto2.jpg',
         foto3:'img/motos/Mondial-LD-110-MAX-FULL/foto3.jpg',
