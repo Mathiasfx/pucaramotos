@@ -248,6 +248,7 @@ function mostarMotos(motos) {
                     <img src="img/Logo.png" alt="" class="logolocal">
                     <img src="${imagen}" alt="Pucara Motos Formosa" width="" id="motofoto" class="img-responsive">
                     <img src="${marcaimagen}" alt="" class="logomarca">
+                    <img src="img/adorno.png" alt="adorno navidad" class="navidad">
                 </div>
                 
                 <div class="">
