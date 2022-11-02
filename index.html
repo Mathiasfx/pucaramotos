@@ -29,7 +29,7 @@
     <meta property="og:image" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main_min.css" />
     <!--Favicon Data-->
     <link
       rel="apple-touch-icon"
@@ -179,24 +179,646 @@
   </head>
 
   <body class="body">
+    <header class="container-fluid" id="header">
+      <div id="loader">
+        <img
+          class="load"
+          src="img/load.gif"
+          alt=""
+          width="100px"
+          height="100px"
+          style="text-align: center"
+        />
+      </div>
+      <div class="row aling-items-center::before">
+        <div class="logo col-sm-12">
+          <img src="img/Logo.png" alt="Logo Pucara Motos" />
 
-   
+          <!-- <a href="#menu" id="sandwich"><i class="fas fa-bars"></i></a>  -->
+          <nav class="menu">
+            <label for="btn-menu" class="icon-menu">☰</label>
+          </nav>
+        </div>
+      </div>
+    </header>
+    `
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+          <p class="pmenu">Filtrar por:</p>
+          <a href="#" id="btnlinea"
+            >Linea
+            <span class="fas fa-caret-down"></span>
+          </a>
+          <ul class="MostrarLineas">
+            <li id="linea110"><i class="fas fa-motorcycle"></i> 110</li>
+            <li id="linea125"><i class="fas fa-motorcycle"></i> 125</li>
+            <li id="linea135"><i class="fas fa-motorcycle"></i> 135</li>
+            <li id="linea150"><i class="fas fa-motorcycle"></i> 150</li>
+            <li id="linea200"><i class="fas fa-motorcycle"></i> 200</li>
+          </ul>
+          <a href="#" id="btnMarca"
+            >Marcas
+            <span class="fas fa-caret-down"></span>
+          </a>
+          <ul class="MostrarMarcas">
+            <li id="bajaj">
+              <img src="img/marcas/bajajmenu.png" alt="" height="40px" />
+            </li>
+            <li id="zanella">
+              <img src="img/marcas/zanellamenu.png" alt="" height="40px" />
+            </li>
+            <li id="corven">
+              <img src="img/marcas/corvenmenu.png" alt="" height="40px" />
+            </li>
+            <li id="keller">
+              <img src="img/marcas/kellermenu.png" alt="" height="40px" />
+            </li>
+            <li id="mondial">
+              <img src="img/marcas/mondialmenu.png" alt="" height="40px" />
+            </li>
+            <li id="motomel">
+              <img src="img/marcas/motomelmenu.png" alt="" height="40px" />
+            </li>
+          </ul>
+        </nav>
+        <label for="btn-menu" class="icon-equis">X</label>
+      </div>
+    </div>
 
-    
-           
+    <section class="container-fluid" id="banner">
+      <div class="row row-eq-height">
+        <!-- IMAGENPROMO -->
+        <div class="product col-sm-12 col-md-8 clearfix" id="product"></div>
+        <!-- IMAGENPROMO -->
 
+        <div class="form col-sm-12 col-md-4 equal">
+          <div id="registrationForm" class="form-horizontal">
+            <p id="consultatitle">Déjanos tu Consulta.</p>
+
+            <!-- FORMULARIO CABECERA -->
+            <form action="" method="POST" id="reg">
+              <div class="formgroup">
+                <label for="Nombre" class="sr-only">Nombre y Apellido</label>
+                <div class="col-sm-11">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="nombre"
+                    id="hnombre"
+                    placeholder="Nombre y Apellido"
+                    maxlength="50"
+                    required
+                  />
+                  <p id="form_error_nombre" class="error"></p>
+                </div>
+              </div>
+              <div class="formgroup">
+                <label for="dni" class="sr-only">DNI</label>
+                <div class="col-sm-11">
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="dni"
+                    id="hdni"
+                    placeholder="Ingrese su DNI"
+                    maxlength="8"
+                  />
+                  <p id="form_error_dni" class="error"></p>
+                </div>
+              </div>
+              <div class="formgroup">
+                <label for="localidad" class="sr-only">Localidad</label>
+                <div class="col-sm-11">
+                  <select class="form-control" name="localidad" id="hlocalidad">
+                    <option value="Ciudad de Formosa">Formosa Capital</option>
+                    <option value="Ibarreta">Ibarreta</option>
+                    <option value="Pirane">Pirane</option>
+                    <option value="Laguna Blanca">Laguna Blanca</option>
+                    <option value="Clorinda">Clorinda</option>
+                    <option value="Las Lomitas">Las lomitas</option>
+                    <option value="Ingeniero Juarez">Ingeniero Juarez</option>
+                  </select>
+                  <p id="form_error_localidad" class="error"></p>
+                </div>
+              </div>
+              <div class="formgroup">
+                <label for="telefono" class="sr-only">Teléfono *</label>
+                <div class="col-sm-11">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="telefono"
+                    id="htelefono"
+                    placeholder="Sin 0 ni 15 Ej: 0370455522"
+                  />
+                  <p id="form_error_telefono" class="error"></p>
+                </div>
+              </div>
+              <div class="formgroup">
+                <label for="metodopago" class="sr-only"
+                  >Elegí tu medio de pago *</label
+                >
+                <div class="col-sm-11">
+                  <select class="form-control" name="mediopago" id="hmediopago">
+                    <option value="Contado">Contado</option>
+                    <option value="Tarjeta de Credito">
+                      Tarjeta de Crédito
+                    </option>
+                    <option value="Credito solo con DNI">
+                      Credito solo DNI
+                    </option>
+                  </select>
+                  <p id="form_error_mediopago" class="error"></p>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-11">
+                  <button
+                    type="submit"
+                    name="enviar"
+                    id="enviarh"
+                    class="btn btn-primary btn-block"
+                  >
+                    <i class="fab fa-whatsapp"></i> Quiero asesoramiento
+                  </button>
+                </div>
+                <p id="form_error" class="error"></p>
+              </div>
+            </form>
+            <!-- Fin CABECERA -->
+
+            <!-- FORMULARIO CABECERA -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <a
+      href="https://uat-origination-showcase.credicuotas.com.ar/#/initoffershowcase"
+      target="_blank"
+    >
+      <div class="botoncredicuotas">
+        <h3 class="link">Consulta tu Credito aquí</h3>
+        <img src="img/logo-credicuotas.svg" alt="Credi Cuotas" width="200px" />
+      </div>
+    </a>
+
+    <!-- 
+    MODAL INICIO -->
+    <div
+      class="modal fade"
+      id="modalForm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold mt-50">Consulta</h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body mx-3 mt-50">
+            <div class="md-form mb-4">
+              <label for="Nombre" class="sr-only">Nombre y Apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                name="nombre"
+                id="nombre"
+                placeholder="Ingrese Nombre y Apellido"
+                maxlength="50"
+              />
+              <p id="form_error_nombre" class="error"></p>
+            </div>
+            <div class="md-form mb-4">
+              <label for="dni" class="sr-only">DNI</label>
+              <input
+                type="number"
+                class="form-control"
+                name="dni"
+                id="dni"
+                placeholder="Ingrese su DNI"
+                maxlength="8"
+              />
+              <p id="form_error_dni" class="error"></p>
+            </div>
+            <div class="md-form mb-4">
+              <label for="localidad">Localidad</label>
+              <select class="form-control" name="localidad" id="localidad">
+                <option value="Formosa">Formosa Capital</option>
+                <option value="Ibarreta">Ibarreta</option>
+                <option value="Pirane">Pirane</option>
+                <option value="Laguna Blanca">Laguna Blanca</option>
+                <option value="Clorinda">Clorinda</option>
+                <option value="Las Lomitas">Las Lomitas</option>
+                <option value="Ingeniero Juarez">Ingeniero Juarez</option>
+              </select>
+              <p id="form_error_localidad" class="error"></p>
+            </div>
+            <div class="md-form mb-4">
+              <label for="telefono">Teléfono *</label>
+              <input
+                type="text"
+                class="form-control"
+                name="telefono"
+                id="telefono"
+                placeholder="Celular sin 0 ni 15 Ej: 0370455522"
+              />
+              <p id="form_error_telefono" class="error"></p>
+            </div>
+            <div class="md-form mb-4">
+              <label for="metodopago">Elegí tu medio de pago *</label>
+              <select class="form-control" name="mediopago" id="mediopago">
+                <option value="Contado">Contado</option>
+                <option value="Tarjeta de Credito">Tarjeta de Crédito</option>
+                <option value="Credito solo con DNI">Credito solo DNI</option>
+              </select>
+              <p id="form_error_mediopago" class="error"></p>
+            </div>
+            <div class="md-form mb-4">
+              <label for="moto">Moto</label>
+              <input
+                type="text"
+                class="form-control"
+                name="modelomoto"
+                id="motoid"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-primary btn-block" id="enviarmodal">
+              <i class="fab fa-whatsapp"></i> Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL FIN -->
+
+    <div id="productos" class="container-fluid"></div>
+
+    <div id="WAButton"></div>
+
+    <div class="container">
+      <!-- SE VE EN CELULAR -->
+      <div
+        id="carouselExampleControls"
+        class="carousel slide d-block d-sm-block d-md-none"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100 lazyload"
+              src="img/carrousel1.jpg"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 lazyload"
+              src="img/carrousel2.jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 lazyload"
+              src="img/carrousel3.jpg"
+              alt="Third slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 lazyload"
+              src="img/carrousel4.jpg"
+              alt="Third slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 lazyload"
+              src="img/carrousel5.jpg"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
       <!-- SE VE EN ESCRITORIO -->
       <div class="row">
-        <div class="col-md-12 pucarahosting">
-          <img src="img/logoblanco.png" class="img-fluid" alt="pucara motos">
-          <p><small>service: off </small></p>
-        
-        
-               
+        <div class="col-md-12">
+          <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <!-- <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#blogCarousel" data-slide-to="1"></li> -->
+            </ol>
+
+            <!-- Carousel items -->
+            <div class="carousel-inner d-none d-sm-none d-md-block">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-3 col-xs-12">
+                    <a href="#">
+                      <img
+                        class="lazyload"
+                        src="img/carrousel1.jpg"
+                        alt="Image"
+                        style="max-width: 100%"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-3 col-xs-12">
+                    <a href="#">
+                      <img
+                        class="lazyload"
+                        src="img/carrousel2.jpg"
+                        alt="Image"
+                        style="max-width: 100%"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-3 col-xs-12">
+                    <a href="#">
+                      <img
+                        class="lazyload"
+                        src="img/carrousel3.jpg"
+                        alt="Image"
+                        style="max-width: 100%"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#">
+                      <img
+                        class="lazyload"
+                        src="img/carrousel4.jpg"
+                        alt="Image"
+                        style="max-width: 100%"
+                      />
+                    </a>
                   </div>
                 </div>
-  </body>
+                <!--.row-->
+              </div>
+              <!--.item-->
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a href="#">
+                      <img
+                        class="lazyload"
+                        src="img/carrousel5.jpg"
+                        alt="Image"
+                        style="max-width: 100%"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#">
+                      <img
+                        class="lazyload"
+                        src="img/carrousel1.jpg"
+                        alt="Image"
+                        style="max-width: 100%"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#">
+                      <img
+                        class="lazyload"
+                        src="img/carrousel2.jpg"
+                        alt="Image"
+                        style="max-width: 100%"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#">
+                      <img
+                        class="lazyload"
+                        src="img/carrousel3.jpg"
+                        alt="Image"
+                        style="max-width: 100%"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <!--.row-->
+              </div>
+              <!--.item-->
+            </div>
+            <!--.carousel-inner-->
+          </div>
+          <!--.Carousel-->
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="https://uat-origination-showcase.credicuotas.com.ar/#/initoffershowcase"
+      target="_blank"
+    >
+      <div class="botoncredicuotas">
+        <h3 class="link">Consulta tu Credito aquí</h3>
+        <img src="img/logo-credicuotas.svg" alt="Credi Cuotas" width="200px" />
+      </div>
+    </a>
+
+    <div class="container-fluid" id="beneficios">
+      <img
+        src="img/marcas/beneficios.png"
+        alt="beneficios"
+        class="img-fluid lazyload"
+      />
+    </div>
+
+    <div class="container-fluid" id="iconos">
+      <img
+        src="img/marcas/marcasmotos.png"
+        alt="Marcas"
+        class="img-responsive iconos lazyload"
+      />
+    </div>
+
+    <section class="cointainer-fluid" id="footer">
+      <div class="row">
+        <div class="col-md-4 form-horizontal" id="formfooter">
+          <!-- FORMULARIO CABECERA -->
+          <form action="" method="POST" id="regfooter">
+            <div class="formgroup">
+              <label for="Nombre" class="sr-only">Nombre y Apellido</label>
+              <div class="col-sm-11">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nombre"
+                  id="nombref"
+                  placeholder="Nombre y Apellido"
+                  maxlength="50"
+                />
+                <p id="form_error_nombre" class="error"></p>
+              </div>
+            </div>
+            <div class="formgroup">
+              <label for="dni" class="sr-only">DNI</label>
+              <div class="col-sm-11">
+                <input
+                  type="number"
+                  class="form-control"
+                  name="dni"
+                  id="dnif"
+                  placeholder="Ingrese su DNI"
+                  maxlength="8"
+                />
+                <p id="form_error_dni" class="error"></p>
+              </div>
+            </div>
+            <div class="formgroup">
+              <label for="localidad" class="sr-only">Localidad</label>
+              <div class="col-sm-11">
+                <select class="form-control" name="localidad" id="localidadf">
+                  <option value="Formosa Capital">Formosa Capital</option>
+                  <option value="Ibarreta">Ibarreta</option>
+                  <option value="Pirane">Pirane</option>
+                  <option value="Laguna Blanca">Laguna Blanca</option>
+                  <option value="Clorinda">Clorinda</option>
+                  <option value="Las Lomitas">Las lomitas</option>
+                  <option value="Ingeniero Juarez">Ingeniero Juarez</option>
+                </select>
+                <p id="form_error_localidad" class="error"></p>
+              </div>
+            </div>
+            <div class="formgroup">
+              <label for="telefono" class="sr-only">Teléfono *</label>
+              <div class="col-sm-11">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="telefono"
+                  id="telefonof"
+                  placeholder="Sin 0 ni 15 Ej: 0370455522"
+                />
+                <p id="form_error_telefono" class="error"></p>
+              </div>
+            </div>
+            <div class="formgroup">
+              <label for="metodopago" class="sr-only"
+                >Elegí tu medio de pago *</label
+              >
+              <div class="col-sm-11">
+                <select class="form-control" name="mediopago" id="mediopagof">
+                  <option value="Contado">Contado</option>
+                  <option value="Tarjeta de Credito">Tarjeta de Crédito</option>
+                  <option value="Credito con DNI">Credito solo DNI</option>
+                </select>
+                <p id="form_error_mediopago" class="error"></p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-11">
+                <button
+                  type="submit"
+                  name="enviar"
+                  id="enviarfooter"
+                  class="btn btn-primary btn-block"
+                >
+                  <i class="fab fa-whatsapp"></i> Quiero asesoramiento
+                </button>
+              </div>
+              <p id="form_error" class="error"></p>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4" id="direcciones">
+          <ul>
+            <li>
+              <i class="fas fa-info-circle"></i> Pucará Motos Formosa (Central)
+              - 3704644585
+            </li>
+            <li>
+              <i class="fas fa-info-circle"></i> Pucará Motos Juarez -
+              3704389267
+            </li>
+            <li>
+              <i class="fas fa-info-circle"></i> Pucará Motos Lomitas -
+              3704276953
+            </li>
+            <li>
+              <i class="fas fa-info-circle"></i> Pucará Motos Ibarreta -
+              3704819381
+            </li>
+            <li>
+              <i class="fas fa-info-circle"></i> Pucará Motos Pirané -
+              3704276951
+            </li>
+            <li>
+              <i class="fas fa-info-circle"></i> Pucará Motos Laguna Blanca -
+              3704703093
+            </li>
+            <li>
+              <i class="fas fa-info-circle"></i> Pucará Motos Clorinda -
+              3704276952
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4" id="social">
+          <div class="facebook">
+            <a href="https://www.facebook.com/pucaramotosfsa/">
+              <img src="img/facebook-square-01.png" height=50px" alt=""></a
+            >
+          </div>
+          <div class="instagram">
+            <a href=""
+              ><img src="img/instagram-brands-01.png" height="50px" alt=""
+            /></a>
+          </div>
+          <div class="logofooter">
+            <img
+              class="lazyload"
+              src="img/logoblanco.png"
+              height="80px"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -216,11 +838,11 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-<!--     <script defer src="js/pucaradb.js"></script>
-    <script defer src="js/main_min.js"></script> -->
+    <script defer src="js/pucaradb.js"></script>
+    <script defer src="js/main_min.js"></script>
     <link rel="stylesheet" href="css/floating-wpp.min.css" />
     <!--Floating WhatsApp javascript-->
-<!--     <script type="text/javascript" src="js/floating-wpp.min.js"></script> -->
+    <script type="text/javascript" src="js/floating-wpp.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
     <script>
@@ -230,18 +852,17 @@
 
   <script type="text/javascript">
     $(function () {
-      return null
-      //$("#WAButton").floatingWhatsApp({
-        //phone: "+543704276950", //WhatsApp Business phone number
-        //headerTitle: "Te asesoramos por WhatsApp!", //Popup Title
-        //popupMessage: "Hola! como podemos ayudarte", //Popup Message
-        //showPopup: true, //Enables popup display
-        //buttonImage: '<img src="img/whatsapp.svg"/>', //Button Image
+      $("#WAButton").floatingWhatsApp({
+        phone: "+543704276950", //WhatsApp Business phone number
+        headerTitle: "Te asesoramos por WhatsApp!", //Popup Title
+        popupMessage: "Hola! como podemos ayudarte", //Popup Message
+        showPopup: true, //Enables popup display
+        buttonImage: '<img src="img/whatsapp.svg"/>', //Button Image
         //headerColor: 'crimson', //Custom header color
         //backgroundColor: 'crimson', //Custom background button color
-        //position: "right", //Position: left | right
+        position: "right", //Position: left | right
       });
-    //});
+    });
   </script>
 
   <!-- <script async>
