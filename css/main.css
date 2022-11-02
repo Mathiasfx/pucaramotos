@@ -38,6 +38,15 @@ body{
     font-size: 1.3rem;
 }
 
+.pucarahosting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #075fd1 -15%, #003aa5 20%);
+}
+
 .menu{
     right: 5%;
     position: absolute;
