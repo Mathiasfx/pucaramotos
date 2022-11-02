@@ -40,6 +40,8 @@ body{
 
 .pucarahosting{
     display: flex;
+    flex-direction: column;
+    color:white;
     justify-content: center;
     align-items: center;
     width: 100vw;
